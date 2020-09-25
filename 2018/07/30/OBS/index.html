@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- keywords -->
+    
+    <meta name="keywords" content="obs屏幕录制,免费无水印电脑录屏软件,雪灵喵,学零秒,雪玲秒,雪灵喵博客">
+    
+
+    <!--Description-->
+    
+        <meta name="description" content="好文章易学习，好工具助学习。跟随雪灵喵一起进步每一天">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="雪灵喵">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="OBS简单入门"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="好文章易学习，好工具助学习。跟随雪灵喵一起进步每一天" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="雪灵喵"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>OBS简单入门 - 雪灵喵</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/" title="雪灵喵">
+            <img src="https://s1.ax1x.com/2020/07/16/UrQNPP.png" class="dib h3" alt="雪灵喵">
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/" 
+                    title="首页">
+                    首页
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/archives" 
+                    title="归档">
+                    归档
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/tags" 
+                    title="标签">
+                    标签
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/categories" 
+                    title="分类">
+                    分类
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/about.html" 
+                    title="关于">
+                    关于
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/contact.html" 
+                    title="联系">
+                    联系
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns">OBS简单入门</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2018-07-30</p>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa fa-file-text-o"></i>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/tags/OBS/">#OBS</a> <a class="fw3 ph1 dib" href="/tags/电脑录屏软件/">#电脑录屏软件</a> <a class="fw3 ph1 dib" href="/tags/开源软件/">#开源软件</a> <a class="fw3 ph1 dib" href="/tags/免费/">#免费</a>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Main Post Content -->
+                    <h2><span id="gai-yao">概要</span><a href="#gai-yao" class="header-anchor">#</a></h2><div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#lu-zhi-ping-mu">录制屏幕</a><ul>
+<li><a href="#lu-zhi-zheng-ge-ping-mu">录制整个屏幕</a></li>
+<li><a href="#lu-zhi-zhi-ding-qu-yu">录制指定区域</a></li>
+</ul>
+</li>
+<li><a href="#lu-zhi-shi-pin-can-shu-pei-zhi">录制视频参数配置</a><ul>
+<li><a href="#cun-chu-lu-jing-shi-pin-ge-shi">存储路径&amp;视频格式</a></li>
+<li><a href="#shi-pin-zheng-shu-pei-zhi-fps">视频帧数配置/FPS</a></li>
+</ul>
+</li>
+<li><a href="#kuai-jie-jian-de-shi-yong">快捷键的使用</a></li>
+<li><a href="#gong-xiang-zi-yuan">共享资源</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<hr>
+<h2><span id="lu-zhi-ping-mu">录制屏幕</span><a href="#lu-zhi-ping-mu" class="header-anchor">#</a></h2><h4><span id="lu-zhi-zheng-ge-ping-mu">录制整个屏幕</span><a href="#lu-zhi-zheng-ge-ping-mu" class="header-anchor">#</a></h4><ol>
+<li>运行OBS右击——&gt;添加【添加场景】</li>
+</ol>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939413/OBS/01.gif" alt="添加场景" title="添加场景"></p>
+<ol start="2">
+<li>添加源右击——&gt;添加——&gt;选则【显示器获取】</li>
+</ol>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/02.gif" alt="获取来源" title="获取整个屏幕"></p>
+<ol start="3">
+<li>点击【预览串流】，看能否获取到屏幕如果可以点击【开始录制视频】，录制的视频默认保存在<code>C:\用户\当前用户\视频文件夹下\</code></li>
+</ol>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/03.gif" alt="开始录制" title="开始录制"></p>
+<h4><span id="lu-zhi-zhi-ding-qu-yu">录制指定区域</span><a href="#lu-zhi-zhi-ding-qu-yu" class="header-anchor">#</a></h4><ol>
+<li>右击添加——&gt;选择【显示器获取】——&gt;「区域」——&gt;勾选区域——&gt;选择区域——&gt;拖动到要录制的区域并调节到适合的大小调节好后按回车——&gt;确认，把整个屏幕项去掉勾选，预览一下串流确认能看到画面后开始录制。</li>
+</ol>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/04.gif" alt="指定区域录制" title="指定区域录制"></p>
+<p>精确控制选择指定区域，在区域菜单项中可以更改一下参数实现精确控制大小和位置。</p>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/05.png" alt="选区参数控制" title="选区参数控制"></p>
+<h2><span id="lu-zhi-shi-pin-can-shu-pei-zhi">录制视频参数配置</span><a href="#lu-zhi-shi-pin-can-shu-pei-zhi" class="header-anchor">#</a></h2><h3><span id="cun-chu-lu-jing-amp-shi-pin-ge-shi">存储路径&amp;视频格式</span><a href="#cun-chu-lu-jing-amp-shi-pin-ge-shi" class="header-anchor">#</a></h3><ul>
+<li>设定——&gt;设定——&gt;广播设定——&gt;档案路径——&gt;浏览（新的存储路径）——&gt;保存类型两种格式可选（默认flv/mp4）——&gt;文件名<code>[$T]</code>是一个参数表示文件名按时间来命名,其它这种参数如下图——&gt;选择——&gt;确认。</li>
+</ul>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/06.gif" alt="路径&amp;格式" title="路径&amp;格式"></p>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/07.png" alt="文件命名参数" title="文件命名参数"></p>
+<h3><span id="shi-pin-zheng-shu-pei-zhi-fps">视频帧数配置/FPS</span><a href="#shi-pin-zheng-shu-pei-zhi-fps" class="header-anchor">#</a></h3><ul>
+<li>设定——&gt;设定——&gt;影像——&gt;FPS（取值范围1~60）——&gt;确定。</li>
+</ul>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/08.gif" alt="FPS" title="FPS"></p>
+<h2><span id="kuai-jie-jian-de-shi-yong">快捷键的使用</span><a href="#kuai-jie-jian-de-shi-yong" class="header-anchor">#</a></h2><p>打开设定面板【快捷键】项，我们可以从这里设置开始录制和暂停录制的热键。</p>
+<p><img src="https://res.cloudinary.com/miku52/image/upload/v1532939414/OBS/09.png" alt="快捷面板" title="快捷面板"></p>
+<hr>
+<h2><span id="gong-xiang-zi-yuan">共享资源</span><a href="#gong-xiang-zi-yuan" class="header-anchor">#</a></h2><p>最后分享一下我正在使用的OBS官方绿色版内置一些常用插件64bit</p>
+<p><a target="_blank" rel="noopener" href="https://www.lanzous.com/i1izyoh" title="获取资源">获取OBS64bit</a></p>
+
+                    
+                    <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/OBS/">#OBS</a> <a class="fw3 ph1 dib" href="/tags/电脑录屏软件/">#电脑录屏软件</a> <a class="fw3 ph1 dib" href="/tags/开源软件/">#开源软件</a> <a class="fw3 ph1 dib" href="/tags/免费/">#免费</a>
+                        </div>
+                    
+
+                    <!-- Comments -->
+                    
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="https://res.cloudinary.com/miku52/image/upload/v1547017613/52miku.top_images/logo.png" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="雪灵喵">
+        </div>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            	&nbsp;	&nbsp;如果此文章对你有所帮助，刚好在你能力范围内，请多多支持无论是转发还是打赏小编在这里谢过大家了! </br>	&nbsp;	&nbsp;如果你也有好工具，好文章欢迎分享，可以通过联系板块中的邮件告知。</br><img src='https://s1.ax1x.com/2020/07/16/UBfcP1.png'/> </br> &nbsp;&nbsp;关注微信公号不错过好文章。</br> <img src='https://s1.ax1x.com/2020/07/20/U445kj.png' alt='U445kj.png'/>
+        </div>
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    
+                        <div class="mt5 tc tl-l">
+    <h3>分类</h3>
+    
+        <p>
+            <a href="/categories/常用工具/">常用工具</a>
+        </p>
+    
+</div>
+
+
+                        <hr class="dn-l mw4 black-50 mt5" />
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>近期文章</h3>
+    
+        <p>
+            <a href="/2020/07/16/chrome-expand/">「日常」Chrome浏览器扩展</a>
+        </p>
+    
+        <p>
+            <a href="/2020/07/14/ps-tych-pane/">Ps拼图扩展——Tych Pane</a>
+        </p>
+    
+        <p>
+            <a href="/2018/07/30/OBS/">OBS简单入门</a>
+        </p>
+    
+        <p>
+            <a href="/2018/07/28/kali-linux/">Windows引导kali Linux实现双系统（U盘安装）</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://space.bilibili.com/26012356/#/" target="_blank">
+                            <i class="fa fa-television"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://jq.qq.com/?_wv=1027&k=5MpzV8n" target="_blank">
+                            <i class="fa fa-qq"></i>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                @ 2020 雪灵喵| Design & Hexo <a class="link dim white" target="_blank" rel="noopener" href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
