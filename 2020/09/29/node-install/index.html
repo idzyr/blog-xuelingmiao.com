@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- keywords -->
+    
+    <meta name="keywords" content="nodejs安装教程,nodejs详细安装,node配置淘宝镜像,雪灵喵,学零秒,雪玲秒,雪灵喵博客">
+    
+
+    <!--Description-->
+    
+        <meta name="description" content="好文章易学习，好工具助学习。跟随雪灵喵一起进步每一天">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="雪灵喵">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Nodejs安装指南"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="好文章易学习，好工具助学习。跟随雪灵喵一起进步每一天" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="雪灵喵"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Nodejs安装指南 - 雪灵喵</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/" title="雪灵喵">
+            <img src="https://s1.ax1x.com/2020/07/16/UrQNPP.png" class="dib h3" alt="雪灵喵">
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/" 
+                    title="首页">
+                    首页
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/archives" 
+                    title="归档">
+                    归档
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/tags" 
+                    title="标签">
+                    标签
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/categories" 
+                    title="分类">
+                    分类
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/about.html" 
+                    title="关于">
+                    关于
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/contact.html" 
+                    title="联系">
+                    联系
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Nodejs安装指南</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2020-09-29</p>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa fa-pencil-square-o"></i>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/tags/nvm/">#nvm</a> <a class="fw3 ph1 dib" href="/tags/node/">#node</a> <a class="fw3 ph1 dib" href="/tags/详细安装/">#详细安装</a>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Main Post Content -->
+                    <h2><span id="gai-yao">概要</span><a href="#gai-yao" class="header-anchor">#</a></h2><div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#nvm-xia-zai-an-zhuang-he-pei-zhi">nvm下载安装和配置</a><ul>
+<li><a href="#xia-zai-nvm">下载nvm</a></li>
+<li><a href="#an-zhuang-nvm">安装nvm</a></li>
+<li><a href="#yan-zheng-nvm-an-zhuang">验证nvm安装</a></li>
+<li><a href="#tian-jia-tao-bao-jing-xiang-yuan">添加淘宝镜像源</a></li>
+</ul>
+</li>
+<li><a href="#nvm-shi-yong">nvm使用</a><ul>
+<li><a href="#xia-zai-nodejs">下载nodejs</a></li>
+<li><a href="#qi-yong-nodejs">启用nodejs</a></li>
+<li><a href="#duo-ban-ben-nodejs-qie-huan">多版本nodejs切换</a></li>
+<li><a href="#xie-zai-nodejs">卸载nodejs</a></li>
+</ul>
+</li>
+<li><a href="#npm-pei-zhi-tao-bao-jing-xiang">npm配置淘宝镜像</a></li>
+<li><a href="#cnpm">CNPM</a></li>
+<li><a href="#ru-he-xie-zai-nvm">如何卸载nvm</a></li>
+<li><a href="#fu-lu">附录</a><ul>
+<li><a href="#nvm-chang-yong-ming-ling">nvm常用命令</a></li>
+<li><a href="#npm-chang-yong-ming-ling">npm常用命令</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+
+<p>通过node官网提供的.msi文件安装不利于版本控制。本文章讲解一下NVM安装nodejs。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmTHS"><img src="https://s1.ax1x.com/2020/09/27/0AmTHS.png" alt="0AmTHS.png"></a></p>
+<p><strong>安装注意事项;</strong><br>在安装NVM之前，您需要卸载任何现有版本的node.js。同时删除可能保留的任何现有nodejs安装目录（例如，“C：\ Program Files \ nodejs”）。NVM生成的符号链接不会覆盖现有的（甚至是空的）安装目录。</p>
+<p>您还应该删除现有的npm安装位置（例如“C：\ Users <user> \ AppData \ Roaming \ npm”）</user></p>
+<h2><span id="nvm-xia-zai-an-zhuang-he-pei-zhi">nvm下载安装和配置</span><a href="#nvm-xia-zai-an-zhuang-he-pei-zhi" class="header-anchor">#</a></h2><h3><span id="xia-zai-nvm">下载nvm</span><a href="#xia-zai-nvm" class="header-anchor">#</a></h3><ol>
+<li><p>打开GitHub<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmInf"><img src="https://s1.ax1x.com/2020/09/27/0AmInf.md.png" alt="0AmInf.md.png"></a><br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmHAg"><img src="https://s1.ax1x.com/2020/09/27/0AmHAg.md.png" alt="0AmHAg.md.png"></a></p>
+</li>
+<li><p>搜索nvm-windows,并打开该项目。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmoB8"><img src="https://s1.ax1x.com/2020/09/27/0AmoB8.md.png" alt="0AmoB8.md.png"></a></p>
+</li>
+<li><p>往下滚动网页，选择Releases<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0Am4jP"><img src="https://s1.ax1x.com/2020/09/27/0Am4jP.png" alt="0Am4jP.png"></a></p>
+</li>
+<li><p>点击nvm-setup.zip下载。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmbNQ"><img src="https://s1.ax1x.com/2020/09/27/0AmbNQ.md.png" alt="0AmbNQ.md.png"></a></p>
+</li>
+</ol>
+<h3><span id="an-zhuang-nvm">安装nvm</span><a href="#an-zhuang-nvm" class="header-anchor">#</a></h3><ol>
+<li>解压压缩包。</li>
+<li>双击nvm-setup.exe运行安装程序。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0Amqhj"><img src="https://s1.ax1x.com/2020/09/27/0Amqhj.png" alt="0Amqhj.png"></a></li>
+<li>按以下图片操作。</li>
+</ol>
+<ul>
+<li>同意协议并下一步<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmO9s"><img src="https://s1.ax1x.com/2020/09/27/0AmO9s.png" alt="0AmO9s.png"></a></li>
+<li>指定NVM安装路径并下一步<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmX3n"><img src="https://s1.ax1x.com/2020/09/27/0AmX3n.png" alt="0AmX3n.png"></a></li>
+<li>指定Nodejs安装路径并下一步<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0Amjcq"><img src="https://s1.ax1x.com/2020/09/27/0Amjcq.png" alt="0Amjcq.png"></a></li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0Amjcq"><img src="https://s1.ax1x.com/2020/09/27/0Amjcq.png" alt="0Amjcq.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AmzuV"><img src="https://s1.ax1x.com/2020/09/27/0AmzuV.png" alt="0AmzuV.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnSBT"><img src="https://s1.ax1x.com/2020/09/27/0AnSBT.png" alt="0AnSBT.png"></a></p>
+<h3><span id="yan-zheng-nvm-an-zhuang">验证nvm安装</span><a href="#yan-zheng-nvm-an-zhuang" class="header-anchor">#</a></h3><ol>
+<li><kbd>Win</kbd>+<kbd>R</kbd> 打开运行。</li>
+<li>输入cmd<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnCEF"><img src="https://s1.ax1x.com/2020/09/27/0AnCEF.png" alt="0AnCEF.png"></a></li>
+<li>输入<code>nvm version</code> 如下图则证明安装成功。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnPN4"><img src="https://s1.ax1x.com/2020/09/27/0AnPN4.png" alt="0AnPN4.png"></a></li>
+</ol>
+<h3><span id="tian-jia-tao-bao-jing-xiang-yuan">添加淘宝镜像源</span><a href="#tian-jia-tao-bao-jing-xiang-yuan" class="header-anchor">#</a></h3><blockquote>
+<p>添加镜像源提高下载速度。</p>
+</blockquote>
+<ol>
+<li>用文本编辑器打开settings.txt文件(路径<code>nvm安装路径\settings.txt</code>)</li>
+<li>在文件后添加以下内容。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node_mirror:https:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;node&#x2F;</span><br><span class="line">npm_mirror: https:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;npm&#x2F;</span><br></pre></td></tr></table></figure></li>
+<li>保存settings.txt<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AK2h4"><img src="https://s1.ax1x.com/2020/09/27/0AK2h4.png" alt="0AK2h4.png"></a></li>
+</ol>
+<h2><span id="nvm-shi-yong">nvm使用</span><a href="#nvm-shi-yong" class="header-anchor">#</a></h2><h3><span id="xia-zai-nodejs">下载nodejs</span><a href="#xia-zai-nodejs" class="header-anchor">#</a></h3><ol start="0">
+<li>打开cmd</li>
+<li>列出服务器上所有node版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls available</span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://imgchr.com/i/0Ani4J"><img src="https://s1.ax1x.com/2020/09/27/0Ani4J.md.png" alt="0Ani4J.md.png"></a></li>
+<li>安装指定版本的node。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm install 版本号</span><br><span class="line"><span class="comment"># 如安装12.18.4版本</span></span><br><span class="line">nvm install 12.18.4</span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnkC9"><img src="https://s1.ax1x.com/2020/09/27/0AnkC9.png" alt="0AnkC9.png"></a></li>
+<li>执行<code>nvm ls</code>查看已经安装的nodejs版本。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnA3R"><img src="https://s1.ax1x.com/2020/09/27/0AnA3R.png" alt="0AnA3R.png"></a></li>
+</ol>
+<h3><span id="qi-yong-nodejs">启用nodejs</span><a href="#qi-yong-nodejs" class="header-anchor">#</a></h3><ol>
+<li>启用上步骤安装的nodejs 使用以下命令直接切换到该版本的nodejs即可启用。至于为什么要这样做，答虽然安装了nodejs但是我们并没有告诉NVM要使用那个版本的nodejs。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm use 已安装nodejs版本号 </span><br><span class="line"><span class="comment"># 如使用12.18.4</span></span><br><span class="line">nvm use 12.18.4</span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnEg1"><img src="https://s1.ax1x.com/2020/09/27/0AnEg1.png" alt="0AnEg1.png"></a></li>
+<li>输入<code>node -v</code> 查看当前的node版本。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnVjx"><img src="https://s1.ax1x.com/2020/09/27/0AnVjx.png" alt="0AnVjx.png"></a></li>
+<li>输入<code>npm -v</code> 查看npm版本。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnMUe"><img src="https://s1.ax1x.com/2020/09/27/0AnMUe.png" alt="0AnMUe.png"></a></li>
+<li>以上命令如果都正确执行则表示nodejs已经成功安装，可以正常使用了。</li>
+</ol>
+<h3><span id="duo-ban-ben-nodejs-qie-huan">多版本nodejs切换</span><a href="#duo-ban-ben-nodejs-qie-huan" class="header-anchor">#</a></h3><blockquote>
+<p>提示；使用nvm install 命令可以安装更多版本node。</p>
+</blockquote>
+<ol>
+<li><p>查看本地安装的nodejs版本，前面有<code>*</code>代表当前使用的node版本。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0A1KVP"><img src="https://s1.ax1x.com/2020/09/27/0A1KVP.png" alt="0A1KVP.png"></a></p>
+</li>
+<li><p>切换到另一个版本node。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm use 版本号</span><br><span class="line"><span class="comment"># 如切换到14.12.0</span></span><br><span class="line">nvm use 14.12.0</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>再次查看版本已经成功切换到了14版本。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AGnbR"><img src="https://s1.ax1x.com/2020/09/27/0AGnbR.png" alt="0AGnbR.png"></a></p>
+</li>
+</ol>
+<h3><span id="xie-zai-nodejs">卸载nodejs</span><a href="#xie-zai-nodejs" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm uninstall 版本号。</span><br><span class="line"><span class="comment"># 如卸载10.22.1</span></span><br><span class="line">nvm uninstall 10.22.1</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnnHO"><img src="https://s1.ax1x.com/2020/09/27/0AnnHO.png" alt="0AnnHO.png"></a></p>
+<h2><span id="npm-pei-zhi-tao-bao-jing-xiang">npm配置淘宝镜像</span><a href="#npm-pei-zhi-tao-bao-jing-xiang" class="header-anchor">#</a></h2><blockquote>
+<p>提高下载速度</p>
+</blockquote>
+<ol>
+<li>查看当前npm源,结果如果是<code>https://registry.npmjs.org</code> 证明我们使用的npm内置的源。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://imgchr.com/i/0Z86F1"><img src="https://s1.ax1x.com/2020/09/29/0Z86F1.png" alt="0Z86F1.png"></a></li>
+</ol>
+<p><strong>临时换源;</strong><br>只有当前使用才生效，下次启动npm会自动恢复默认内置源。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm --registry https://registry.npm.taobao.org install express</span><br></pre></td></tr></table></figure>
+<p><strong>持久换源;</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0Z8cJx"><img src="https://s1.ax1x.com/2020/09/29/0Z8cJx.png" alt="0Z8cJx.png"></a></p>
+<p>配置后可通过下面方式来验证是否成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0Z8gW6"><img src="https://s1.ax1x.com/2020/09/29/0Z8gW6.png" alt="0Z8gW6.png"></a><br>如果查看发现源改变则证明换源成功，赶紧试试安装一个包吧</p>
+<h2><span id="cnpm">CNPM</span><a href="#cnpm" class="header-anchor">#</a></h2><blockquote>
+<p>如果你感觉NPM配置了淘宝镜像还是慢可以尝试以下CNPM</p>
+</blockquote>
+<p><strong>全局安装cnpm;</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p><strong>验证安装；</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/0AnKED"><img src="https://s1.ax1x.com/2020/09/27/0AnKED.md.png" alt="0AnKED.md.png"></a></p>
+<p>以后再次安装包时，把npm换为cnpm即可。</p>
+<h2><span id="ru-he-xie-zai-nvm">如何卸载nvm</span><a href="#ru-he-xie-zai-nvm" class="header-anchor">#</a></h2><p>直接向QQ那样到控制面板卸载NVM for Windows</p>
+<h2><span id="fu-lu">附录</span><a href="#fu-lu" class="header-anchor">#</a></h2><h3><span id="nvm-chang-yong-ming-ling">nvm常用命令</span><a href="#nvm-chang-yong-ming-ling" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">nvm ls <span class="comment"># 查看安装的node版本</span></span><br><span class="line">nvm list <span class="comment"># 查看安装的node版本</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># node安装</span></span><br><span class="line">nvm ls available <span class="comment"># 列出服务器上所有node版本</span></span><br><span class="line">nvm install 版本号 [位数] <span class="comment"># 选择要安装的版本如是32位系统要后加32，表示下载32位node</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 版本切换 </span></span><br><span class="line">nvm use version <span class="comment"># 要切换的版本</span></span><br><span class="line">nvm use 8.1 <span class="comment"># 切换到8.1系列的最高版本</span></span><br><span class="line">nvm use node <span class="comment"># 切换到最新版本</span></span><br><span class="line">nvm uninstall 0.0.0 <span class="comment"># 卸载指定版本的node</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3><span id="npm-chang-yong-ming-ling">npm常用命令</span><a href="#npm-chang-yong-ming-ling" class="header-anchor">#</a></h3><p><strong>参数简写对照</strong></p>
+<ul>
+<li><code>--save</code>相当于<code>-s</code></li>
+<li><code>--global</code>相当于<code>-g</code></li>
+<li><code>--save-dev</code>相当于<code>-d</code></li>
+<li><code>--save-optional</code>相当于<code>-o</code></li>
+<li><code>--save-exact</code>相当于<code>-e</code><br>需要注意的是，我们在安装第三方包的时候通常会用到-s、-g、-d后缀，其他的很少用到。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g 包名 <span class="comment"># 卸载指定的全局包</span></span><br><span class="line"><span class="comment"># 安装第三方包</span></span><br><span class="line">npm install xxx  <span class="comment"># 安装模块如不指定版本号，默认会安装最新的版本，安装但不写入package.json</span></span><br><span class="line">npm install xxx 0.0.1  <span class="comment"># 安装指定版本的模块</span></span><br><span class="line">npm install --save xxx <span class="comment"># 安装并把模块的版本信息保存到dependencies（生产环境依赖）中，即你的package.json文件的dependencies字段中</span></span><br><span class="line">npm install --global xxx    <span class="comment"># 全局安装指定的包。</span></span><br><span class="line">npm install --save-dev xxx <span class="comment"># 安装并把模块版本信息保存到devDependencies（开发环境依赖）中，即你的package.json文件的devDependencies字段中</span></span><br><span class="line">npm install --save-optional xxx <span class="comment"># 安装并把模块安装到optionalDependencies（可选环境依赖）中，即你的package.json文件的optionalDependencies字段中</span></span><br><span class="line">npm install --save-exact xxx <span class="comment"># 精确的安装指定版本的模块，dependencies字段里每个模块版本号前面的^会取消掉</span></span><br><span class="line"><span class="comment"># 其他npm命令行</span></span><br><span class="line">npm init <span class="comment"># 在当前目录生成一个package.json文件，这个文件中会记录一些关于项目的信息，比如：项目的作者，git地址，入口文件、命令设置、项目名称和版本号等等，一般情况下这个文件是必须要有的，方便后续的项目添加和其他开发人员的使用。</span></span><br><span class="line">npm list 或 npm ll 或 npm la 或 npm ls  <span class="comment"># 列出已安装模块， ll 、 ls 、 la 三个命令意思都一样，但是列表的展示方式不一样</span></span><br><span class="line">npm show xxx  <span class="comment"># 显示模块详情</span></span><br><span class="line">npm update  <span class="comment"># 升级当前目录下的项目的所有模块</span></span><br><span class="line">npm update xxx  <span class="comment"># 升级当前目录下的项目的指定模块</span></span><br><span class="line">npm update -g xxx  <span class="comment"># 升级全局安装的指定模块</span></span><br><span class="line">npm uninstall xxx  <span class="comment"># 删除指定的模块</span></span><br><span class="line">npm list --depth=0 <span class="comment"># 仅获取顶层的软件包</span></span><br><span class="line">npm list minimist <span class="comment"># 程序最小依赖</span></span><br><span class="line">npm view pkg versions    <span class="comment"># 列出包的所有版本</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+                    
+                    <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/nvm/">#nvm</a> <a class="fw3 ph1 dib" href="/tags/node/">#node</a> <a class="fw3 ph1 dib" href="/tags/详细安装/">#详细安装</a>
+                        </div>
+                    
+
+                    <!-- Comments -->
+                    
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="https://res.cloudinary.com/miku52/image/upload/v1547017613/52miku.top_images/logo.png" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="雪灵喵">
+        </div>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            	&nbsp;	&nbsp;如果此文章对你有所帮助，刚好在你能力范围内，请多多支持无论是转发还是打赏小编在这里谢过大家了! </br>	&nbsp;	&nbsp;如果你也有好工具，好文章欢迎分享，可以通过联系板块中的邮件告知。</br><img src='https://s1.ax1x.com/2020/07/16/UBfcP1.png'/> </br> &nbsp;&nbsp;关注微信公号不错过好文章。</br> <img src='https://s1.ax1x.com/2020/07/20/U445kj.png' alt='U445kj.png'/>
+        </div>
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    
+                        <div class="mt5 tc tl-l">
+    <h3>分类</h3>
+    
+        <p>
+            <a href="/categories/Node/">Node</a>
+        </p>
+    
+</div>
+
+
+                        <hr class="dn-l mw4 black-50 mt5" />
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>近期文章</h3>
+    
+        <p>
+            <a href="/2020/09/29/node-install/">Nodejs安装指南</a>
+        </p>
+    
+        <p>
+            <a href="/2020/07/16/chrome-expand/">「日常」Chrome浏览器扩展</a>
+        </p>
+    
+        <p>
+            <a href="/2020/07/14/ps-tych-pane/">Ps拼图扩展——Tych Pane</a>
+        </p>
+    
+        <p>
+            <a href="/2018/07/30/OBS/">OBS简单入门</a>
+        </p>
+    
+        <p>
+            <a href="/2018/07/28/kali-linux/">Windows引导kali Linux实现双系统（U盘安装）</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://space.bilibili.com/26012356/#/" target="_blank">
+                            <i class="fa fa-television"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://jq.qq.com/?_wv=1027&k=5MpzV8n" target="_blank">
+                            <i class="fa fa-qq"></i>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                @ 2020 雪灵喵| Design & Hexo <a class="link dim white" target="_blank" rel="noopener" href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
