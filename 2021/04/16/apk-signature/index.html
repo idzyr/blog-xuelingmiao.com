@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- keywords -->
+    
+    <meta name="keywords" content="android,as,apk,签名,打包,生成,雪灵喵,学零秒,雪玲秒,雪灵喵博客">
+    
+
+    <!--Description-->
+    
+        <meta name="description" content="好文章易学习，好工具助学习。跟随雪灵喵一起进步每一天">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="雪灵喵">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Android Studio apk签名打包生成"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="好文章易学习，好工具助学习。跟随雪灵喵一起进步每一天" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="雪灵喵"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Android Studio apk签名打包生成 - 雪灵喵</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/" title="雪灵喵">
+            <img src="https://s1.ax1x.com/2020/07/16/UrQNPP.png" class="dib h3" alt="雪灵喵">
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/" 
+                    title="首页">
+                    首页
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/archives" 
+                    title="归档">
+                    归档
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/tags" 
+                    title="标签">
+                    标签
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/categories" 
+                    title="分类">
+                    分类
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/about.html" 
+                    title="关于">
+                    关于
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/contact.html" 
+                    title="联系">
+                    联系
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Android Studio apk签名打包生成</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2021-04-16</p>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa fa-android"></i>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/tags/Android/">#Android</a> <a class="fw3 ph1 dib" href="/tags/Android-Studio/">#Android Studio</a> <a class="fw3 ph1 dib" href="/tags/apk/">#apk</a> <a class="fw3 ph1 dib" href="/tags/打包/">#打包</a> <a class="fw3 ph1 dib" href="/tags/签名/">#签名</a>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Main Post Content -->
+                    <h3><span id="gai-yao">概要</span><a href="#gai-yao" class="header-anchor">#</a></h3><div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#shuo-ming">说明</a></li>
+<li><a href="#liao-jie-mi-yao-zheng-shu-he-mi-yao-ku">了解密钥、证书和密钥库</a><ul>
+<li><a href="#mi-yao">密钥</a></li>
+<li><a href="#zheng-shu">证书</a></li>
+<li><a href="#mi-yao-ku">密钥库</a></li>
+</ul>
+</li>
+<li><a href="#sheng-cheng-mi-yao-ku">生成密钥库</a><ul>
+<li><a href="#as-sheng-cheng">AS生成</a></li>
+<li><a href="#keytool">KeyTool</a><ul>
+<li><a href="#keytool-zhi-ling">keytool指令</a></li>
+<li><a href="#ming-ling-xing-sheng-cheng-mi-yao">命令行生成密钥</a></li>
+<li><a href="#qian-yi-mi-yao-dao-pkcs12">迁移密钥到PKCS12</a></li>
+<li><a href="#zhi-jie-sheng-cheng-pkcs12">直接生成PKCS12</a></li>
+<li><a href="#cha-kan-mi-yao-ku-xiang-qing">查看密钥库详情</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#shi-yong-mi-yao-wei-ying-yong-qian-ming">使用密钥为应用签名</a><ul>
+<li><a href="#android-app-bundle">Android App Bundle</a></li>
+<li><a href="#apk">APK</a></li>
+</ul>
+</li>
+<li><a href="#zi-dong-qian-ming-da-bao">自动签名打包</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<hr>
+<h2><span id="shuo-ming">说明</span><a href="#shuo-ming" class="header-anchor">#</a></h2><p>本笔记以打包新手的视角进行记录。<br>在笔记中存在截图和代码内容略有不符，但不影响学习。还请大家谅解。</p>
+<h2><span id="liao-jie-mi-yao-zheng-shu-he-mi-yao-ku">了解密钥、证书和密钥库</span><a href="#liao-jie-mi-yao-zheng-shu-he-mi-yao-ku" class="header-anchor">#</a></h2><blockquote>
+<p>以下内容因引用自<a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio/publish/app-signing">https://developer.android.google.cn/studio/publish/app-signing</a> 略有改动。</p>
+</blockquote>
+<h3><span id="mi-yao">密钥</span><a href="#mi-yao" class="header-anchor">#</a></h3><p>用于为用户设备上安装的 APK 签名的密钥称为<strong>应用签名密钥</strong>。作为 Android 安全更新模型的一部分，应用签名密钥在应用的整个生命周期内保持不变。应用签名密钥属于私钥，因此必须保密。不过，您可以与他人共享使用应用签名密钥生成的证书。</p>
+<h3><span id="zheng-shu">证书</span><a href="#zheng-shu" class="header-anchor">#</a></h3><p><strong>公钥证书</strong>（<code>.der</code> 或 <code>.pem</code> 文件，也称为数字证书或身份证书）包含公钥或私钥对中的公钥，以及可以标识持有对应私钥的所有者的一些其他元数据（例如名称和位置）。通过密钥就可以生成证书。</p>
+<p>在为您的应用签名时，签名工具会将该证书附加到应用。该证书会将 APK 或 App Bundle 与您和您对应的私钥相关联。这有助于 Android 确保您应用日后的所有更新都真实可靠，并且来自原始作者。</p>
+<p><strong>证书指纹</strong>是证书独一无二的简短表示形式，通常 API 提供商会要求同时提供证书指纹和软件包名称，以注册使用其服务的应用。您可以在 Play 管理中心的“应用签名”页面上找到上传证书和应用签名证书的 MD5、SHA-1 和 SHA-256 指纹。您还可以从同一页面下载原始证书 (<code>.der</code>) 来计算其他指纹。</p>
+<h3><span id="mi-yao-ku">密钥库</span><a href="#mi-yao-ku" class="header-anchor">#</a></h3><p>Java 密钥库（<code>.jks</code> 或 <code>.keystore</code>）：一个二进制文件，用作证书和私钥的存储区。<strong>Play Encrypt Private Key (PEPK) 工具</strong>：使用此工具可从 Java 密钥库中导出私钥。</p>
+<h2><span id="sheng-cheng-mi-yao-ku">生成密钥库</span><a href="#sheng-cheng-mi-yao-ku" class="header-anchor">#</a></h2><h3><span id="as-sheng-cheng">AS生成</span><a href="#as-sheng-cheng" class="header-anchor">#</a></h3><ol>
+<li><p>在菜单栏中，依次点击 <strong>Build &gt; Generate Signed Bundle/APK</strong>。</p>
+</li>
+<li><p>在 <strong>Generate Signed Bundle or APK</strong> 对话框中，选择 <strong>Android App Bundle</strong> 或 <strong>APK</strong>，然后点击 <strong>Next</strong>。</p>
+</li>
+<li><p>在 <strong>Key store path</strong> 字段下，点击 <strong>Create new</strong>。</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AETA.png" alt="image-20210306162122647"></p>
+</li>
+<li><p>在 <strong>New Key Store</strong> 窗口中，为您的密钥库和密钥提供以下信息。</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AZFI.png" alt="image-20210306193310808"></p>
+</li>
+</ol>
+<p>示例；<br><img src="https://s3.ax1x.com/2021/03/09/63AykR.png" alt="img" style="zoom:50%;"></p>
+<ol start="5">
+<li><p>填写完表单后，请点击 <strong>OK</strong>。有可能会出现以下错误。有关如何解决此问题请看下面 <a href="#%E8%BF%81%E7%A7%BB%E5%AF%86%E9%92%A5%E5%88%B0PKCS12">迁移密钥到PKCS12</a></p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AQOg.png" alt="image-20210306202107114"></p>
+</li>
+</ol>
+<h3><span id="keytool">KeyTool</span><a href="#keytool" class="header-anchor">#</a></h3><h4><span id="keytool-zhi-ling">keytool指令</span><a href="#keytool-zhi-ling" class="header-anchor">#</a></h4><p>以下列出在下面章节中要使用到的部分命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令:</span></span><br><span class="line"> -certreq            生成证书请求</span><br><span class="line"> -changealias        更改条目的别名</span><br><span class="line"> -delete             删除条目</span><br><span class="line"> -exportcert         导出证书</span><br><span class="line"> -genkeypair         生成密钥对 -genkey <span class="comment">#简写</span></span><br><span class="line"> -genseckey          生成密钥</span><br><span class="line"> -gencert            根据证书请求生成证书</span><br><span class="line"> -importcert         导入证书或证书链</span><br><span class="line"> -importpass         导入口令</span><br><span class="line"> -importkeystore     从其他密钥库导入一个或所有条目</span><br><span class="line"> -keypasswd          更改条目的密钥口令</span><br><span class="line"> -list               列出密钥库中的条目</span><br><span class="line"> -printcert          打印证书内容</span><br><span class="line"> -printcertreq       打印证书请求的内容</span><br><span class="line"> -printcrl           打印 CRL 文件的内容</span><br><span class="line"> -storepasswd        更改密钥库的存储口令</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><code>-genkey</code> 生成密钥对</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 选项:</span></span><br><span class="line"> -<span class="built_in">alias</span> &lt;<span class="built_in">alias</span>&gt;                  要处理的条目的别名</span><br><span class="line"> -keyalg &lt;keyalg&gt;                密钥算法名称</span><br><span class="line"> -keysize &lt;keysize&gt;              密钥位大小</span><br><span class="line"> -sigalg &lt;sigalg&gt;                签名算法名称</span><br><span class="line"> -destalias &lt;destalias&gt;          目标别名</span><br><span class="line"> -dname &lt;dname&gt;                  唯一判别名</span><br><span class="line"> -startdate &lt;startdate&gt;          证书有效期开始日期/时间</span><br><span class="line"> -ext &lt;value&gt;                    X.509 扩展</span><br><span class="line"> -validity &lt;valDays&gt;             有效天数</span><br><span class="line"> -keypass &lt;arg&gt;                  密钥口令</span><br><span class="line"> -keystore &lt;keystore&gt;            密钥库名称</span><br><span class="line"> -storepass &lt;arg&gt;                密钥库口令</span><br><span class="line"> -storetype &lt;storetype&gt;          密钥库类型</span><br><span class="line"> -providername &lt;providername&gt;    提供方名称</span><br><span class="line"> -providerclass &lt;providerclass&gt;  提供方类名</span><br><span class="line"> -providerarg &lt;arg&gt;              提供方参数</span><br><span class="line"> -providerpath &lt;pathlist&gt;        提供方类路径</span><br><span class="line"> -v                              详细输出</span><br><span class="line"> -protected                      通过受保护的机制的口令</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>-importkeystore</code>  从其他密钥库导入一个或所有条目</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 选项:</span></span><br><span class="line"> -srckeystore &lt;srckeystore&gt;            源密钥库名称</span><br><span class="line"> -destkeystore &lt;destkeystore&gt;          目标密钥库名称</span><br><span class="line"> -srcstoretype &lt;srcstoretype&gt;          源密钥库类型</span><br><span class="line"> -deststoretype &lt;deststoretype&gt;        目标密钥库类型</span><br><span class="line"> -srcstorepass &lt;arg&gt;                   源密钥库口令</span><br><span class="line"> -deststorepass &lt;arg&gt;                  目标密钥库口令</span><br><span class="line"> -srcprotected                         受保护的源密钥库口令</span><br><span class="line"> -srcprovidername &lt;srcprovidername&gt;    源密钥库提供方名称</span><br><span class="line"> -destprovidername &lt;destprovidername&gt;  目标密钥库提供方名称</span><br><span class="line"> -srcalias &lt;srcalias&gt;                  源别名</span><br><span class="line"> -destalias &lt;destalias&gt;                目标别名</span><br><span class="line"> -srckeypass &lt;arg&gt;                     源密钥口令</span><br><span class="line"> -destkeypass &lt;arg&gt;                    目标密钥口令</span><br><span class="line"> -noprompt                             不提示</span><br><span class="line"> -providerclass &lt;providerclass&gt;        提供方类名</span><br><span class="line"> -providerarg &lt;arg&gt;                    提供方参数</span><br><span class="line"> -providerpath &lt;pathlist&gt;              提供方类路径</span><br><span class="line"> -v                                    详细输出</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h4><span id="ming-ling-xing-sheng-cheng-mi-yao">命令行生成密钥</span><a href="#ming-ling-xing-sheng-cheng-mi-yao" class="header-anchor">#</a></h4><p>输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式</span></span><br><span class="line">keytool -genkey -<span class="built_in">alias</span> 密钥别名 -keypass 密钥密码 -keyalg 密钥算法名称 -keysize 密钥位大小 -validity 有效天数 -keystore 密钥库名称（包含路径.keystore） -storepass 密钥库密码</span><br><span class="line"></span><br><span class="line"><span class="comment"># 示例</span></span><br><span class="line">keytool -genkey -<span class="built_in">alias</span> demo -keypass 123123 -keyalg RSA -keysize 2048 -validity 366 -keystore ./deom.keystore -storepass 321321</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s3.ax1x.com/2021/03/09/63A3wj.png" alt="image-20210306211441320"></p>
+<p> <img src="https://s3.ax1x.com/2021/03/09/63A1mQ.png" alt="image-20210306211548822"></p>
+<p>以上警告将在下一节中介绍如何处理。</p>
+<h4><span id="qian-yi-mi-yao-dao-pkcs12">迁移密钥到PKCS12</span><a href="#qian-yi-mi-yao-dao-pkcs12" class="header-anchor">#</a></h4><blockquote>
+<p>解决提示；JKS 密钥库使用专用格式。建议使用 “keytool -importkeystore -srckeystore E:\xxxxxx- pkcs12” 迁移到行业标准格式PKCS12</p>
+</blockquote>
+<p><img src="https://s3.ax1x.com/2021/03/09/63ABm4.png" alt="image-20210308205620237"></p>
+<p>如果你按照keytool中给出的指令（上图中引号内的指令建议复制到其它文本编辑器确认无回车符后执行）执行后提示如下请按照以下命令进行尝试。</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AwXF.png" alt="image-20210308210346952"><br>图片内容补充请；在指定了 -destkeystore后重试</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式；</span></span><br><span class="line">keytool -importkeystore -srckeystore 源密钥库名称 -destkeystore 目标密钥库名称 -deststorepass  目标密钥库密码 -deststoretype 目标密钥库类型</span><br><span class="line"></span><br><span class="line"><span class="comment"># 示例</span></span><br><span class="line">keytool -importkeystore -srckeystore ./deom.keystore -destkeystore ./deom.keystore -deststorepass 321321 -deststoretype pkcs12</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="https://s3.ax1x.com/2021/03/09/63AJkn.png" alt="image-20210306222259890"></p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63A8Ts.png" alt="image-20210306222358158"></p>
+<p>可以看到之前密钥库已经被添加<code>.old</code>作为备份，要使用就用没有<code>old</code>后缀的密钥库文件。</p>
+<blockquote>
+<p><strong>注意；</strong></p>
+<p>当使用迁移后的密钥进行打包时会报<code>Given final block not properly padded. Such issues can arise if a bad key is used during decryption.</code> 出现这种问题是我们输入的密钥密码错误导致的，实际这里的密码和密钥库密码是一样的（也就是上面我在命令中设置的321321），而非我们迁移密钥库前的密钥密码。我也是后来才知道至于为啥出现这种问题这里不深究了。下面我会介绍如何解决此问题。</p>
+</blockquote>
+<p>如果你在执行完上述命令后出现以下错误。请尝试以下指令。</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AD0J.png" alt="image-20210308212920199"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式</span></span><br><span class="line">keytool -importkeystore -srckeystore 源密钥库 -destkeystore 目标密钥库 -deststorepass 目标密钥库密码 -destkeypass 目标密钥库密钥密码 -deststoretype 目标密钥库类型</span><br><span class="line"></span><br><span class="line"><span class="comment"># 示例</span></span><br><span class="line">keytool -importkeystore -srckeystore .\xx.jks -destkeystore .\xx.jks -deststorepass xx -destkeypass xx -deststoretype pkcs12</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s3.ax1x.com/2021/03/09/63Ar79.png" alt="image-20210308213619203"></p>
+<blockquote>
+<p><strong>注意；</strong></p>
+<p>这里和上面一样在使用迁移后的密钥库时，密钥库密码和密钥库密钥密码一致。</p>
+</blockquote>
+<p><strong>解决密钥库密钥和密钥相同问题；</strong></p>
+<p>详细参考；<a href="#%E7%9B%B4%E6%8E%A5%E7%94%9F%E6%88%90PKCS12">直接生成PKCS12</a>步骤二</p>
+<h4><span id="zhi-jie-sheng-cheng-pkcs12">直接生成PKCS12</span><a href="#zhi-jie-sheng-cheng-pkcs12" class="header-anchor">#</a></h4><ol>
+<li><p>执行下面命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式</span></span><br><span class="line">keytool -genkey -v -<span class="built_in">alias</span> 密钥别名 -keyalg 密钥算法名称 -storetype 密钥库类型 -keystore 密钥库名称 -storepass 密钥库密码 -keypass 密钥密码 -validity 密钥库有效期</span><br><span class="line"><span class="comment"># 示例</span></span><br><span class="line">keytool -genkey -v -<span class="built_in">alias</span> demo -keyalg RSA -storetype PKCS12 -keystore ./demo.keystore -storepass 123123 -keypass 321321 -validity 3600</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s3.ax1x.com/2021/03/09/63Ad6U.png" alt="image-20210307152259386"></p>
+</li>
+<li><p>此时生成的证书确实是pkcs12，但alias的口令（密码）与密钥库的口令一样，如果这样能满足你的需求，那就不用往下看了。但一般我们不希望别名和秘钥库的口令是一样的，所以接下来我们用命令修改刚才创建的别名口令即可。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式</span></span><br><span class="line">keytool -keypasswd -<span class="built_in">alias</span> 密钥别名 -keystore 密钥库。</span><br><span class="line"><span class="comment"># 示例；</span></span><br><span class="line">keytool -keypasswd -<span class="built_in">alias</span> demo -keystore ./demo.keystore.jks</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s3.ax1x.com/2021/03/09/63AalT.png" alt="image-20210308200126949"></p>
+</li>
+</ol>
+<h4><span id="cha-kan-mi-yao-ku-xiang-qing">查看密钥库详情</span><a href="#cha-kan-mi-yao-ku-xiang-qing" class="header-anchor">#</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式</span></span><br><span class="line">keytool -list -v -keystore 密钥库</span><br><span class="line"><span class="comment"># 示例</span></span><br><span class="line">keytool -list -v -keystore ./deom.keystore</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s3.ax1x.com/2021/03/09/63A6t1.png" alt="image-20210308214219142"></p>
+<h2><span id="shi-yong-mi-yao-wei-ying-yong-qian-ming">使用密钥为应用签名</span><a href="#shi-yong-mi-yao-wei-ying-yong-qian-ming" class="header-anchor">#</a></h2><h3><span id="android-app-bundle">Android App Bundle</span><a href="#android-app-bundle" class="header-anchor">#</a></h3><p>Android App Bundle 是一种发布格式，其中包含您应用的所有经过编译的代码和资源，它会将 APK 生成及签名交由 Google Play 来完成。</p>
+<p>Google Play 会使用您的 App Bundle 针对每种设备配置生成并提供经过优化的 APK，因此只会下载特定设备所需的代码和资源来运行您的应用。您不必再构建、签署和管理多个 APK 来优化对不同设备的支持，而用户也可以获得更小且更优化的下载文件包。</p>
+<blockquote>
+<p>详细了解 <a target="_blank" rel="noopener" href="https://developer.android.google.cn/guide/app-bundle?hl=zh_cn">https://developer.android.google.cn/guide/app-bundle?hl=zh_cn</a></p>
+</blockquote>
+<h3><span id="apk">APK</span><a href="#apk" class="header-anchor">#</a></h3><ol>
+<li><p>如果您目前没有打开 <strong>Generate Signed Bundle or APK</strong> 对话框，请依次点击 <strong>Build &gt; Generate Signed Bundle/APK</strong>。</p>
+</li>
+<li><p>在 <strong>Generate Signed Bundle or APK</strong> 对话框中，选择  <strong>APK</strong>，然后点击 <strong>Next</strong>。</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AAwd.png" alt="image-20210306193817343"></p>
+</li>
+<li><p>从下拉菜单中选择一个模块。</p>
+</li>
+<li><p>指定密钥库的路径、密钥的别名，然后输入二者的密码。key alias选择存储在密钥库里的别名。如果您尚未准备好上传密钥库和密钥，请先<a href="#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5%E5%BA%93">生成上传密钥和密钥库</a>，然后返回完成此步骤。</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AeYt.png" alt="image-20210306194324045"></p>
+</li>
+</ol>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AKl8.png" alt="image-20210306194744537"></p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63Atf0.png" alt="image-20210306225440363"></p>
+<ol start="5">
+<li><p>点击 <strong>Next</strong>。</p>
+</li>
+<li><p>为签名的应用选择一个目标文件夹，选择构建类型，然后选择产品变种（如果适用）。</p>
+<blockquote>
+<p><strong>注意；</strong></p>
+<p>debug默认不使用系统签名，而且对一些文件图片的格式校验比较松，还有就是一些string.xml文件或其他xml文件命名校验不是很严格，不必进行强制编译</p>
+</blockquote>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AM6S.png" alt="image-20210306195332141"></p>
+</li>
+</ol>
+<ul>
+<li><strong>V1；</strong> 就是传统的签名方式，</li>
+<li><strong>V2；</strong> 则是Android7.0之后引入的。</li>
+<li><strong>其区别是；</strong>V1是通过ZIP条目进行验证，这样APK 签署后可进行许多修改；而V2验证压缩文件的所有字节，而不是单个 ZIP 条目，这样在签名后无法再更改。V2的好处很明显，更安全且验证更迅速。所以，推荐在生成apk时，签名方式选择V1+V2。当然，仅仅选择V1也是可以的。<strong>如果仅选择V2呢</strong>，这样生成的apk在Android7.0及之后的版本上没有问题，不过会导致7.0以下的版本无法安装，所以要避免这种方式。</li>
+</ul>
+<p>debug方式；</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AYYq.png" alt="image-20210306225019047"></p>
+<p>release方式；</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AUpV.png" alt="image-20210306225746806"></p>
+<h2><span id="zi-dong-qian-ming-da-bao">自动签名打包</span><a href="#zi-dong-qian-ming-da-bao" class="header-anchor">#</a></h2><p>首先在Android studio 右击项目选择 Open module settings</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AmfP.png" alt="img"></p>
+<p>填写完成点击应用、OK后会在 Module：app （build.gradle）生成代码：</p>
+<p><img src="https://s3.ax1x.com/2021/03/09/63AuSf.png" alt="img"></p>
+<p>好了到这里就基本完成了。</p>
+
+                    
+                    <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/Android/">#Android</a> <a class="fw3 ph1 dib" href="/tags/Android-Studio/">#Android Studio</a> <a class="fw3 ph1 dib" href="/tags/apk/">#apk</a> <a class="fw3 ph1 dib" href="/tags/打包/">#打包</a> <a class="fw3 ph1 dib" href="/tags/签名/">#签名</a>
+                        </div>
+                    
+
+                    <!-- Comments -->
+                    
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="https://res.cloudinary.com/miku52/image/upload/v1547017613/52miku.top_images/logo.png" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="雪灵喵">
+        </div>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            	&nbsp;	&nbsp;如果此文章对你有所帮助，刚好在你能力范围内，请多多支持无论是转发还是打赏小编在这里谢过大家了! </br>	&nbsp;	&nbsp;如果你也有好工具，好文章欢迎分享，可以通过联系板块中的邮件告知。</br><img src='https://s1.ax1x.com/2020/07/16/UBfcP1.png'/> </br> &nbsp;&nbsp;关注微信公号不错过好文章。</br> <img src='https://s1.ax1x.com/2020/07/20/U445kj.png' alt='U445kj.png'/>
+        </div>
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>近期文章</h3>
+    
+        <p>
+            <a href="/2021/04/16/apk-signature/">Android Studio apk签名打包生成</a>
+        </p>
+    
+        <p>
+            <a href="/2020/09/29/node-install/">Nodejs安装指南</a>
+        </p>
+    
+        <p>
+            <a href="/2020/07/16/chrome-expand/">「日常」Chrome浏览器扩展</a>
+        </p>
+    
+        <p>
+            <a href="/2020/07/14/ps-tych-pane/">Ps拼图扩展——Tych Pane</a>
+        </p>
+    
+        <p>
+            <a href="/2018/07/30/OBS/">OBS简单入门</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://space.bilibili.com/26012356/#/" target="_blank">
+                            <i class="fa fa-television"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://jq.qq.com/?_wv=1027&k=5MpzV8n" target="_blank">
+                            <i class="fa fa-qq"></i>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                @ 2020 雪灵喵| Design & Hexo <a class="link dim white" target="_blank" rel="noopener" href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
